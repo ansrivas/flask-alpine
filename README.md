@@ -1,10 +1,19 @@
-# flask-alpine
-Minimal python alpine image to adduser and run a simple flask server
 
-## This example creates a non-root user and runs a flask server
+# flask-alpine-docker
+
+This example creates a non-root user in a docker image based on alpine and runs a flask server with non-root user privileges.
+
+---
 
 ## Build using:
+```
 docker build --no-cache  -t python-build:latest .
+```
+---
 
 ## Run using:
+```
 docker run -it --name flaskpython -p 8008:8008 python-build:latest
+```
+
+---
